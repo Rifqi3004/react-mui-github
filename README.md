@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Simple React Apps With Integration to Github API
+This projects is simple react apps to search username on github api and detail repositories.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with 
+- [Create React App](https://github.com/facebook/create-react-app).
+- [Material UI V4](https://mui.com)
+- [Github API V3](https://developer.github.com/v3/)
+
+## How to Install
+1. Clone this repo
+2. open folder `react-mui-github`
+3. Install depedencies with `npm install` or `yarn install`
+4. create file `.env` on root folder
+5. add environment on file `.env`
+    ```sh
+    REACT_APP_GITHUB_API=your_personal_github_token
+    ```
+    Read this [document](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for get personal github token 
+
+6. start project with `npm run start` or `yarn start`
 
 ## Available Scripts
 
@@ -44,3 +61,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Credit
+Follow me for contact or friendship
+- [Linkedin]([https://github.com/facebook/create-react-app](https://www.linkedin.com/in/rifqi-abdillah/)).
+- [Instagram]([https://mui.com](https://www.instagram.com/revqi_abdillah/))
+- [Site](https://rifqi3004.github.io/)
