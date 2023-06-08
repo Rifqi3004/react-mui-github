@@ -8,6 +8,7 @@ type SearchType  = {
     placeholder: string,
     value: string,
     setValue: (args: string) => void
+    onSearch: () => void
 };
 
 const SearchContainer = styled(Paper)({
@@ -19,17 +20,20 @@ const SearchContainer = styled(Paper)({
 }) as typeof Paper;
 
 function Search(props: SearchType) {
-    const { placeholder, value, setValue } = props;
+    const { placeholder, value, setValue, onSearch } = props;
   return (
-    <SearchContainer
-      component="form"
-    >
+    <SearchContainer>
       <InputBase
         sx={{ ml: 1, flex: 1 }}
         placeholder={placeholder}
         inputProps={{ 'aria-label': placeholder }}
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            onSearch()
+          }
+        }}
       />
       <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
         <SearchIcon />

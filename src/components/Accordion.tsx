@@ -11,6 +11,8 @@ const Accordion = styled((props: AccordionProps) => (
   "&:before": {
     display: "none",
   },
+  borderRadius: 5,
+  overflow: 'hidden',
 }));
 
 export default Accordion;

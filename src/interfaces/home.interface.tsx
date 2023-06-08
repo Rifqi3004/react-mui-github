@@ -149,13 +149,3 @@ export interface ItemUser {
     repository?:         GithubRepositoryInterface[];       
 };
 
-export interface ResponseGithubRepositoryInterface {
-    config: any;
-    data: GithubRepositoryInterface[],
-    headers: any,
-    request: any,
-    status: number,
-    statusText: string
-
-};
-
